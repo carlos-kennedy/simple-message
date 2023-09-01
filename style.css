@@ -73,7 +73,7 @@ input:disabled {
 input:focus-visible,
 input:focus {
   border-radius: 0.3rem;
-  outline: 0.2rem solid blue;
+  outline: 0.2rem solid #0000ff;
   border: none;
 }
 
