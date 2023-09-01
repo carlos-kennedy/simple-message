@@ -50,10 +50,10 @@ header p {
 }
 label {
   position: absolute;
-  height: 1px;
-  width: 1px;
+  height: 0.1rem;
+  width: 0.1rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.1rem;
   overflow: hidden;
   clip-path: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -84,6 +84,12 @@ span {
 button:disabled {
   opacity: 0.2;
   color: #ffffff;
+}
+
+.swal-icon--success__hide-corners,
+.swal-icon--success:after,
+.swal-icon--success:before {
+  background: transparent;
 }
 
 @media (prefers-color-scheme: light) {
@@ -151,4 +157,3 @@ button:disabled {
     background-color: #1f000e;
   }
 }
-
