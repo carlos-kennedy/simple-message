@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Excon", sans-serif;
+}
+
+div:is(.wrapper) {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+form {
+  background-color: #c70039;
+  padding-inline: 1.2rem;
+  padding-block: 2rem;
+  border-radius: 2rem;
+}
+
+form:is(.inputs) {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+}
+
+header p {
+  font-size: 1.8rem;
+}
+label {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+input {
+  padding: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+input:disabled {
+  opacity: 0.5;
+}
+
+input:focus-visible,
+input:focus {
+  border-radius: 0.3rem;
+  outline: 0.2rem solid blue;
+  border: none;
+}
+
+span {
+  font-size: 1.3rem;
+}
+
+button:disabled {
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  body {
+    background-color: #7d0633;
+  }
+
+  button,
+  .swal-button {
+    padding: 2rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background-color: #7d0633;
+  }
+
+  .swal-modal {
+    background-color: #ffffff;
+  }
+
+  .swal-title,
+  .swal-text {
+    color: currentColor;
+  }
+
+  .swal-button:not([disabled]):hover {
+    opacity: 0.8;
+    background-color: #7d0633;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ebebeb;
+    background-color: #ffffff;
+  }
+
+  body {
+    background-color: #1f000e;
+  }
+
+  button,
+  .swal-button {
+    padding: 2rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background-color: #1f000e;
+  }
+
+  .swal-modal {
+    background-color: #000000;
+  }
+
+  .swal-title,
+  .swal-text {
+    color: currentColor;
+  }
+
+  .swal-button:not([disabled]):hover {
+    opacity: 0.8;
+    background-color: #1f000e;
+  }
+}
+

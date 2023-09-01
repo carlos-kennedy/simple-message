@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <script type="module" src="/main.js" defer></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=excon@400,500&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+</head>
+
+<!-- oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" -->
+
+<body>
+  <div id="app">
+    <main>
+
+      <div class="wrapper">
+
+        <form name="forms" class="inputs">
+          <header>
+            <h1>Olá Seja bem vindo</h1>
+            <p>Por favor coloque os seus dados no campo abaixo</p>
+          </header>
+          <input type="text" id="yourName" placeholder="Nome (opcional)" autofocus />
+          <label for="phoneNumber">
+            Telefone:
+          </label>
+          <input type="text" id="phoneNumber" placeholder="(11)1 1111-1111 (obrigatório)" />
+          <label for="subject">
+            Assunto:
+          </label>
+          <input type="text" id="subject" placeholder="Assunto (obrigatório)" />
+          <span></span>
+
+          <button id="btn" disabled>Enviar</button>
+        </form>
+      </div>
+
+
+    </main>
+  </div>
+</body>
+
+</html>
